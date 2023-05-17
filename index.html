@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link Css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Calculadora</title>
+</head>
+<body id="darkMode" data-mode="darkMode">
+    <header class="calcHeader">
+        <h1 class="headerTitle">Calculadora</h1>
+
+        <button type="button" class="button darkModeSwitcher" id="darkModeSwitcher">Switch Dark / Light Mode</button>
+    </header>
+
+    <div class="container">
+        <div class="userInputContainer">
+            <input type="text" class="input" id="numberInput" placeholder="Insert Here">
+            <button class="button" id="clearButton">C</button>
+        </div>
+
+        <div class="buttonsContainer">
+            <button class="button calcButton" data-button="7">7</button>
+            <button class="button calcButton" data-button="8">8</button>
+            <button class="button calcButton" data-button="9">9</button>
+            <button class="button calcButton" data-button="+">+</button>
+            <button class="button calcButton" data-button="4">4</button>
+            <button class="button calcButton" data-button="5">5</button>
+            <button class="button calcButton" data-button="6">6</button>
+            <button class="button calcButton" data-button="-">-</button>
+            <button class="button calcButton" data-button="1">1</button>
+            <button class="button calcButton" data-button="2">2</button>
+            <button class="button calcButton" data-button="3">3</button>
+            <button class="button calcButton" data-button="*">x</button>
+            <button class="button calcButton" data-button="0">0</button>
+            <button class="button calcButton" data-button=",">,</button>
+            <button class="button calcButton" data-button="/">/</button>
+
+            <button class="button" id="equalButton" data-button="=">=</button>
+        </div>
+
+
+        <div class="resultInputContainer">
+            <input type="text" class="input" id="resultInput" value="" disabled>
+        </div> 
+    </div>
+
+    <footer class="pageFooter">
+        <p>
+            Feito com 
+            <span class="heartIcon">&hearts;</span>
+            por Leonardo Pereira - &copy; 2023
+        </p>
+
+    </footer>
+
+    <!-- Script JS -->
+    <script src="./js/index.js"></script>
+</body>
+</html>
